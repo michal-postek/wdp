@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1667304306 source:/home/michal/Dokumenty/pythagorean-triangle/main.cpp
+	<iostream>
+	<math.h>
+
