@@ -12,20 +12,20 @@ int main()
     int len = text.length();
 
     for (int i = 0; i < len; i++) {
-        if (text[i] == 'a') {
-            text[i] = 'A';
-            counter++;
-        } else if (text[i] == 'b') {
-            text[i] = 'B';
+        char current = text[i];
+
+        if (current == 'a' || current == 'b') {
+            text[i] = toupper(current);
             counter++;
         }
     }
 
     if (len % 2 != 0) {
-        char middle = text[(len - 1) / 2];
+        int middleIndex = (len - 1) / 2;
+        char middle = text[middleIndex];
 
-        if (middle != 'A' && middle != 'B') {
-            text[len / 2] = toupper(text[len / 2]);
+        if (middle != toupper(middle)) {
+            text[middleIndex] = toupper(middle);
             counter++;
         }
     }
