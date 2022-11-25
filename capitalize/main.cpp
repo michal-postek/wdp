@@ -12,10 +12,10 @@ int main()
     int len = text.length();
 
     for (int i = 0; i < len; i++) {
-        if (text[i, 1] == 'a') {
+        if (text[i] == 'a') {
             text[i] = 'A';
             counter++;
-        } else if (text[i, 1] == 'b') {
+        } else if (text[i] == 'b') {
             text[i] = 'B';
             counter++;
         }
