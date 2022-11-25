@@ -8,6 +8,7 @@ int countCharInText(string text, string character);
 int countAllLettersInText(string text);
 string encryptText(string text, int increase);
 string encyptTextBySwappingLetters(string text);
+int countVowelsInText(string text);
 
 int main()
 {
@@ -42,11 +43,13 @@ int main()
     cout << "Tekst z tablicy: " << arrayToText(chars) << "\n";
 
     string text = "Lorem Ipsum is simply dummy text.";
+    string text2 = "abcde";
     cout << "Przykladowy tekst: " << text << "\n";
     cout << "Ilosc `i` w podanym tekscie: " << countCharInText(text, "i") << "\n";
     cout << "Ilosc liter i liczb w podanym tekscie: " << countAllLettersInText(text) << "\n";
     cout << "Zaszyfrowany tekst: " << encryptText(text, 2) << "\n";
     cout << "Zaszyfrowany tekst 2: " << encyptTextBySwappingLetters(text) << "\n";
+    cout << "Liczba samogłosek w tekście: " << countVowelsInText(text2) << "\n";
 }
 
 string arrayToText(char chars[]) {
@@ -113,4 +116,12 @@ string encyptTextBySwappingLetters(string text) {
     }
 
     return encryptedText;
+}
+
+int countVowelsInText(string text) {
+    int i, counter = 0;
+
+    //todo
+
+    return counter;
 }
