@@ -12,10 +12,10 @@ int main()
     int len = text.length();
 
     for (int i = 0; i < len; i++) {
-        if (text.substr(i, 1) == "a") {
+        if (text[i, 1] == 'a') {
             text[i] = 'A';
             counter++;
-        } else if (text.substr(i, 1) == "b") {
+        } else if (text[i, 1] == 'b') {
             text[i] = 'B';
             counter++;
         }
@@ -24,7 +24,7 @@ int main()
     if (len % 2 != 0) {
         char middle = text[(len - 1) / 2];
 
-        if (middle != 'a' && middle != 'b') {
+        if (middle != 'A' && middle != 'B') {
             text[len / 2] = toupper(text[len / 2]);
             counter++;
         }
